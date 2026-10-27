@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+
+    <!-- Neon Accents -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Filter for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .pulse-circle {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .float-card-left {
+        animation: floatLeft 6s ease-in-out infinite alternate;
+      }
+      .float-card-right {
+        animation: floatRight 7s ease-in-out infinite alternate;
+      }
+      .flow-line {
+        stroke-dasharray: 8, 8;
+        animation: dash 20s linear infinite;
+      }
+      .chip-pulse {
+        animation: chipGlow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+        100% { transform: scale(1.15) translate(-10px, -10px); opacity: 0.45; }
+      }
+      @keyframes floatLeft {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-12px); }
+      }
+      @keyframes floatRight {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(14px); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -160; }
+      }
+      @keyframes chipGlow {
+        0% { opacity: 0.4; }
+        100% { opacity: 0.85; filter: drop-shadow(0 0 12px #38bdf8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Animated Background Glow Blobs -->
+  <circle cx="150" cy="80" r="140" fill="url(#cyanGlow)" filter="url(#glow)" class="pulse-circle" />
+  <circle cx="1060" cy="300" r="160" fill="url(#purpleGlow)" filter="url(#glow)" class="pulse-circle" style="animation-delay: -2s;" />
+
+  <!-- Grid Pattern Overlay in Background -->
+  <g opacity="0.08" stroke="#94A3B8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="380" />
+    <line x1="300" y1="0" x2="300" y2="380" />
+    <line x1="450" y1="0" x2="450" y2="380" />
+    <line x1="600" y1="0" x2="600" y2="380" />
+    <line x1="750" y1="0" x2="750" y2="380" />
+    <line x1="900" y1="0" x2="900" y2="380" />
+    <line x1="1050" y1="0" x2="1050" y2="380" />
+  </g>
+
+  <!-- Animated Circuit & Data Lines in Background -->
+  <g opacity="0.35">
+    <path d="M 60 190 Q 200 90 350 190 T 650 190" fill="none" stroke="#38BDF8" stroke-width="2" class="flow-line" />
+    <path d="M 550 200 Q 750 300 950 200 T 1140 180" fill="none" stroke="#A855F7" stroke-width="2" class="flow-line" />
+  </g>
+
+  <!-- Dynamic Background Floating Cards (Subtle, low z-index, placed far to sides) -->
+  <!-- Left Background Card -->
+  <g class="float-card-left" opacity="0.6">
+    <rect x="40" y="240" width="220" height="75" rx="10" fill="url(#cardGrad)" stroke="#38BDF8" stroke-width="1.2" filter="url(#softGlow)" />
+    <text x="60" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0">🖥️ Datacenter &amp; Cloud</text>
+    <text x="60" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#94A3B8">Servers • Racks • IPAM • CMDB</text>
+  </g>
+
+  <!-- Right Background Card -->
+  <g class="float-card-right" opacity="0.6">
+    <rect x="940" y="60" width="220" height="75" rx="10" fill="url(#cardGrad)" stroke="#A855F7" stroke-width="1.2" filter="url(#softGlow)" />
+    <text x="960" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0">🏷️ Asset Life Cycle</text>
+    <text x="960" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#94A3B8">Procure • Audit • EOL • Track</text>
+  </g>
+
+  <!-- Animated Hardware Microchip Icon (Decorative left) -->
+  <g transform="translate(80, 75)" class="chip-pulse">
+    <rect x="0" y="0" width="48" height="48" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5" />
+    <circle cx="24" cy="24" r="8" fill="#38BDF8" opacity="0.8" />
+    <line x1="24" y1="-8" x2="24" y2="0" stroke="#38BDF8" stroke-width="2" />
+    <line x1="24" y1="48" x2="24" y2="56" stroke="#38BDF8" stroke-width="2" />
+    <line x1="-8" y1="24" x2="0" y2="24" stroke="#38BDF8" stroke-width="2" />
+    <line x1="48" y1="24" x2="56" y2="24" stroke="#38BDF8" stroke-width="2" />
+  </g>
+
+  <!-- Animated Barcode/Scanner Graphic (Decorative right) -->
+  <g transform="translate(1070, 240)" class="chip-pulse" style="animation-delay: -1.5s;">
+    <rect x="0" y="0" width="55" height="48" rx="8" fill="#1E293B" stroke="#A855F7" stroke-width="1.5" />
+    <line x1="10" y1="12" x2="10" y2="36" stroke="#C084FC" stroke-width="3" />
+    <line x1="17" y1="12" x2="17" y2="36" stroke="#C084FC" stroke-width="1.5" />
+    <line x1="24" y1="12" x2="24" y2="36" stroke="#C084FC" stroke-width="4" />
+    <line x1="33" y1="12" x2="33" y2="36" stroke="#C084FC" stroke-width="2" />
+    <line x1="42" y1="12" x2="42" y2="36" stroke="#C084FC" stroke-width="3" />
+    <line x1="4" y1="24" x2="51" y2="24" stroke="#EF4444" stroke-width="1.5" opacity="0.75" />
+  </g>
+
+  <!-- ================= FOREGROUND (Always Crisp, Centered & Highly Legible) ================= -->
+
+  <!-- Top Pill / Category Badge -->
+  <g transform="translate(470, 48)">
+    <rect x="0" y="0" width="260" height="34" rx="17" fill="#1E293B" stroke="#38BDF8" stroke-width="1" opacity="0.95" />
+    <circle cx="20" cy="17" r="5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="34" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#38BDF8" letter-spacing="1.5">HARDWARE ASSET MANAGEMENT</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="600" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="900" fill="url(#textGrad)" letter-spacing="-0.5" filter="url(#softGlow)">
+    Awesome Hardware Asset Management
+  </text>
+  <text x="600" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="900" fill="url(#textGrad)" letter-spacing="-0.5">
+    Awesome Hardware Asset Management
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="192" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#E2E8F0">
+    Curated SaaS Platforms, Open-Source Engines &amp; Physical IT Lifecycle Control
+  </text>
+
+  <!-- Feature Tags / Pills Strip (Centered in foreground) -->
+  <g transform="translate(230, 235)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="160" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="80" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#38BDF8">💻 IT Discovery</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(180, 0)">
+      <rect width="180" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="90" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#A855F7">🔄 Lifecycle Tracking</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(380, 0)">
+      <rect width="170" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="85" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#34D399">🛡️ Audit Readiness</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(570, 0)">
+      <rect width="170" height="36" rx="8" fill="#1E293B" stroke="#475569" stroke-width="1" />
+      <text x="85" y="23" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FBBF24">🌐 CMDB &amp; DCIM</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Bar -->
+  <g transform="translate(300, 315)">
+    <rect width="600" height="2" rx="1" fill="url(#textGrad)" opacity="0.6" />
+    <text x="300" y="25" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#64748B">
+      ⭐ Star &amp; Fork on GitHub • Community Curated • Updated for 2026
+    </text>
+  </g>
+</svg>

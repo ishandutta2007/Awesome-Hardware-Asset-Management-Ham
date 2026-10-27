@@ -1,197 +1,154 @@
-# Awesome-Hardware-Asset-Management-Ham
-
-## Top Hardware Asset Management (HAM) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Hardware Lifecycle Tracking, Asset Discovery & IT Inventory Control*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Hardware Asset Management (HAM)**. These tools enable organizations to discover, track, and manage physical IT assets—laptops, servers, network devices, and peripherals—across their entire lifecycle from procurement through retirement, ensuring accurate inventory, audit readiness, and cost optimization.
-
-
-
-**Examples** include ServiceNow Hardware Asset Management, Lansweeper, Device42, Ivanti Neurons for HAM, Snow Software, Flexera, ManageEngine AssetExplorer, Asset Panda, Hardcat, and Cherwell Asset Management (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosted IT asset tracking, inventory management, and license compliance—ideal for organizations building sovereign HAM infrastructure without per-asset or per-seat licensing lock-in.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[ServiceNow Hardware Asset Management](https://www.servicenow.com/)**  
-
-  Enterprise HAM on the Now Platform providing a single source of truth for hardware across its lifecycle; the Australia release adds AI-powered purchase order creation from attachments, dynamic asset insights summarizing lifecycle history and audit status, real-time continuous asset audits with in-flow record creation, and Data Center Network and Asset Management (DCNAM) for racks, servers, and facility assets .
-
-
-
-- **[Lansweeper](https://www.lansweeper.com/)**  
-
-  Automated hardware discovery platform covering IT, OT, cloud, and IoT environments; combines agent-based and agentless, active and passive discovery to surface shadow IT and transient devices; tracks warranty, usage, and EOL/EOS for every asset, supports NIST/ISO 19770/GDPR audit readiness, and integrates with ServiceNow, Atlassian, and HaloITSM .
-
-
-
-- **[Device42](https://www.device42.com/)**  
-
-  Agentless IT discovery and asset management platform with continuously updated CMDB; v13.6.2 adds ADFS SAML SSO support, background bulk device deletion, simplified device add UI, and options to prevent duplicate AWS instance records; provides application dependency mapping and data center infrastructure management (DCIM) .
-
-
-
-- **[Ivanti Neurons for HAM](https://www.ivanti.com/)**  
-
-  Unified ITAM platform with comprehensive discovery using active and passive scanning plus third-party connectors; delivers a real-time 360-degree view of devices, users, applications, and services; ITSM/ITAM certified for FedRAMP Moderate with DoD IL5 in progress; full lifecycle from request through procurement to disposal .
-
-
-
-- **[Snow Software](https://www.snowsoftware.com/)**  
-
-  Software and hardware asset management platform with Snow Inventory acting as a central discovery hub; tracks desktops, servers, mobile devices, network equipment (routers, printers, firewalls), and cloud resources; supports OS coverage from Windows 95 through modern platforms and multiple virtualization technologies .
-
-
-
-- **[Flexera](https://www.flexera.com/)**  
-
-  Hybrid ITAM platform with Technopedia-powered intelligence providing full device specs including manufacturer, model, memory, processors, location, cost center, GA date, and obsolete date; integrates with Atlassian Service Collection for CMDB enrichment and incident/change management workflows .
-
-
-
-- **[ManageEngine AssetExplorer](https://www.manageengine.com/products/asset-explorer/)**  
-
-  ITAM platform with automatic network scanning and discovery of hardware (workstations, printers, routers, switches) and software across Windows, Linux, Solaris, Mac, IBM AIX, and VMware; tracks ownership history, total cost of ownership, associated contracts and licenses, and CMDB relationships for root cause analysis .
-
-
-
-- **[Asset Panda](https://www.assetpanda.com/)**  
-
-  Asset management platform with mobile-first scanning (offline-capable), custody tracking with signatures and handoffs, inspections and ticketing, and AI-assisted imports; connects assets to people, places, documents, and history across departments without forcing rigid workflows .
-
-
-
-- **[Hardcat](https://hardcat.com/)**  
-
-  Enterprise asset management platform; v2.18 introduces a Compliance Policy Framework for risk-based continuous asset validation (reducing scheduled audits), enhanced GPS precision, relative date searching, and file attachments for location and supplier records .
-
-
-
-- **[Cherwell Asset Management](https://www.cherwell.com/)**  
-
-  ITAM solution (now part of Ivanti) with asset groups for organizing discovered and user-defined assets, filtering reports by organizational categories, and integration within the broader Cherwell ITSM ecosystem .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Snipe-IT](https://github.com/grokability/snipe-it)**  
-
-  The most widely adopted open-source IT asset management system (PHP/Laravel); tracks hardware, equipment, and software licenses with ownership, location, and status; includes license entitlement and expiration tracking for compliance, consumable inventory with low-stock alerts, and a REST API for automation; Docker-deployable with active development and frequent releases .
-
-
-
-- **[GLPI](https://github.com/glpi-project/glpi)**  
-
-  Free asset and IT management software package (GPL) with hardware inventory tracking, software auditing, licenses management, and ITIL service desk; includes a native inventory agent for automated discovery; GLPI 11.0.x is actively maintained with security patches; widely deployed in European enterprises and public sector .
-
-
-
-- **[Ralph](https://github.com/allegro/ralph)**  
-
-  Full-featured Asset Management, DCIM, and CMDB system for data centers and back offices (Apache 2.0); tracks asset purchases and lifecycle, provides flexible lifecycle flow system, supports data center and back office operations, and includes built-in DC visualization; maintained by Allegro under a "sources only" model with ongoing modernization investment .
-
-
-
-- **[Tagaris](https://hub.docker.com/r/goodhallsolutions/tagaris-bundled)**  
-
-  Self-hosted IT asset register (single-container or two-container Docker deployment) tracking hardware, software licenses, warranties, domains, and assignments with dated history; features multi-level locations (site/floor/room/rack), printable QR labels, mobile iOS app for scanning and audits, vendor/purchase order/lease contract management, Snipe-IT and GLPI migration via API, scheduled encrypted backups, and SSO with Entra ID/Okta/Google/OpenID Connect .
-
-
-
-- **[OCS Inventory NG](https://github.com/OCSInventory-NG)**  
-
-  Open-source assets management and deployment solution with agents for Windows, Unix, macOS, and Android; communication server (Perl) and web console for inventory reporting; Docker images and Helm charts available; actively maintained with recent agent and server updates .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Asseto** — Free open-source IT asset management with equipment tracking and maintenance scheduling (Django); features bulk CSV import, gate pass module for asset movements, QR code scanning, recycle bin for soft-deleted records, 2FA, and Firebase push notifications; Docker-deployable .
-
-- **DumbAssets** — Minimalist physical asset tracking for individuals and small teams; records model, serial, purchase info, multi-level components, photos/invoices, warranty reminders, maintenance tasks, and Apprise notifications (email, Telegram, Slack); PIN-protected with Docker deployment .
-
-- **AssetsUp** — Modern inventory and asset management (Next.js/NestJS/PostgreSQL) for tracking physical and digital assets across departments, branches, and countries; includes lifecycle tracking, history logs, role-based access, and search/filtering .
-
-- **GitHub `itam` topic** — 8+ active repositories (TypeScript focus) covering self-hosted ITAM with RBAC/SSO/audit logging, hardware custody with magic-link handovers, and FinOps+CMDB hybrid platforms .
-
-
-
-**Frameworks for building custom systems**: Combine **Snipe-IT** for comprehensive hardware and license tracking with a mature web UI, **GLPI** for ITIL-aligned asset management with native inventory agent, **Tagaris** for modern QR-driven audits and custody tracking with migration paths from Snipe-IT/GLPI, and **Ralph** for data center DCIM and CMDB needs in a fully self-hosted HAM stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- HAM platforms handling asset and ownership data must comply with applicable privacy regulations and organizational security policies; asset location and assignment data can reveal sensitive operational details.
-
-- Self-hosted open-source solutions vary in scope—Snipe-IT and GLPI provide mature lifecycle tracking and license management, while Tagaris offers modern QR-driven workflows with migration paths; full enterprise discovery across hybrid environments typically requires commercial platforms or integration with network scanning tools.
-
-- Verify license terms for commercial use; Snipe-IT is open-source (check repository for specific license), GLPI uses GPL, Ralph uses Apache 2.0, and Tagaris is a self-hosted Docker image .
-
-
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Hardware Asset Management (HAM)" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Hardware-Asset-Management-Ham/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Hardware-Asset-Management-Ham?style=flat-square&logo=github&color=blue" alt="Repo Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Hardware-Asset-Management-Ham/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Hardware-Asset-Management-Ham?style=flat-square&logo=github&color=blue" alt="Repo Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Hardware-Asset-Management-Ham/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Hardware-Asset-Management-Ham?style=flat-square&color=green" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Hardware-Asset-Management-Ham/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 🖥️ Awesome Hardware Asset Management (HAM) 🏷️
 
+> A curated, SEO-optimized directory of enterprise **SaaS platforms**, **open-source HAM tools**, and **automated IT discovery engines**. Master hardware lifecycle management—from procurement, deployment, and active tracking to audit readiness, compliance, and secure retirement.
 
-**Made for IT asset managers, system administrators, help desk teams, and infrastructure engineers.**  
+---
 
-Let's make hardware asset management more open, auditable, and lifecycle-aware.
+## 📑 Table of Contents
+
+- [🌟 Introduction & Key Concepts](#-introduction--key-concepts)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Commercial Platforms](#-saas--hosted-commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Core Capabilities Matrix](#️-core-capabilities-matrix)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer & License](#️-disclaimer--license)
+
+---
+
+## 🌟 Introduction & Key Concepts
+
+**Hardware Asset Management (HAM)** is a foundational pillar of **IT Asset Management (ITAM)**. It encompasses the structured management of physical technology components—such as end-user laptops, physical servers, networking switches, storage racks, IoT devices, and specialized peripherals—throughout their entire lifespan.
+
+```
+  [ 🛒 Procurement ] ──▶ [ 📦 Receiving & Tagging ] ──▶ [ ⚙️ Provisioning ]
+                                                              │
+  [ ♻️ EOL Disposal ] ◀── [ ⚠️ Decommissioning ] ◀─── [ 🔍 Active Audit / CMDB ]
+```
+
+### 🎯 Primary Objectives of Modern HAM:
+- 🔍 **Automated Asset Discovery**: Eliminate shadow IT and untracked network endpoints using agent-based and agentless scanning.
+- 🏷️ **Custody & Ownership Tracking**: Maintain audit-proof trails of device assignments, department cost centers, and physical locations.
+- 📉 **Lifecycle & Depreciation Control**: Monitor total cost of ownership (TCO), warranty expiration, lease returns, and capital depreciation schedules.
+- 🛡️ **Regulatory Compliance & Audit Readiness**: Adhere to ISO/IEC 19770 standards, SOC 2, NIST, and GDPR security requirements.
+- 🔌 **Configuration Management Database (CMDB) Sync**: Feed real-time physical device topology into ITSM workflows to resolve incidents faster.
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **Hardware Asset Management (HAM)** and ITAM software market is valued at approximately **$2.5B to $3.5B in pure-play software ARR**, expanding to over **$30B+ annually** when factoring in comprehensive hardware lifecycle logistics, maintenance contracts, and IT asset disposition (ITAD) services. The sector is compounding at a healthy **10.5% – 11.8% CAGR** toward 2030, accelerated by remote/hybrid work distributions, multi-cloud data center footprints, and stricter cybersecurity asset compliance mandates.
+
+The market structure is **moderately fragmented**:
+- 🏛️ **Enterprise Tier (Consolidated / Oligopolistic)**: The high-end enterprise ITSM segment is concentrated around mega-cap suites like **ServiceNow**, **Flexera**, and **Ivanti**, which command large multi-year enterprise contracts and serve as global single sources of truth.
+- 🚀 **Mid-Market & Specialized Edge (Fragmented)**: The mid-market, SMB, and edge network discovery spaces remain intensely competitive and fragmented across agile SaaS specialists (such as **Lansweeper**, **Device42**, and **Asset Panda**) alongside an active ecosystem of self-hosted open-source software (such as **Snipe-IT** and **NetBox**) that provide sovereign asset control without per-device tax.
+
+---
+
+## 🏢 SaaS & Hosted Commercial Platforms
+
+The following commercial solutions represent the category leaders in enterprise Hardware Asset Management, sorted in descending order by **Company Size (Revenue / Valuation)**.
+
+| 🏢 Product | 📈 Company Size (Revenue / Valuation) | 💵 Starting Tier Price | 🎁 Free Tier / Trial Limit | ⚡ Key HAM Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **[ServiceNow HAM](https://www.servicenow.com/)** | **$10.98B Revenue** / ~$170B Market Cap *(NYSE: NOW)* | **~$30,000 / year** *(Enterprise modular starting contract)* | **15-day guided sales POC**; free permanent Developer Sandboxes via developer program | Comprehensive enterprise HAM; AI-driven PO generation from invoice attachments; dynamic asset health scores; continuous automated physical audits; Data Center Network & Asset Management (DCNAM). |
+| **[Flexera](https://www.flexera.com/)** *(incl. Snow Software)* | **$2.90B Valuation** / ~$400M ARR *(Thoma Bravo)* | **~$25,000 / year** *(Flexera One entry package)* | **30-day custom POC trial** *(Scope-tailored evaluation with sales engineering support)* | Technopedia catalog covering >5M hardware products with authoritative specifications; automated hardware obsolescence and EOL/EOS tracking; hybrid ITAM + FinOps normalization. |
+| **[Ivanti Neurons for HAM](https://www.ivanti.com/)** *(incl. Cherwell)* | **$2.00B+ Valuation** / ~$500M Revenue *(Clearlake & TA Associates)* | **~$25 / device / year** *(Entry discovery tiers; platform minimum ~$5,000/yr)* | **30-day structured pilot trial** *(Full network discovery feature access during evaluation)* | Hybrid active and passive agentless network scanning; real-time 360° device insights; FedRAMP Moderate and DoD IL5 certified; automated procurement to disposal workflows. |
+| **[ManageEngine AssetExplorer](https://www.manageengine.com/products/asset-explorer/)** | **$1.10B+ Revenue** / ~$10B+ Private Valuation *(Zoho Corp)* | **$955 / year** *(Up to 250 assets package)* | **Free forever up to 25 nodes (on-prem) / 50 nodes (cloud)**; 30-day trial for up to 250 nodes | Out-of-the-box multi-platform network scanning (Windows, Linux, macOS, SNMP); software compliance auditing; CMDB relationship visualization; purchase orders and contract management. |
+| **[Lansweeper](https://www.lansweeper.com/)** | **$850M (€800M) Valuation** / $115M ARR *(Bridgepoint)* | **$239 / month** *billed annually (~$2,868/yr for up to 2,000 assets)* | **Free forever up to 100 assets**; 14-day full-feature free trial *(Unlimited discovery scans during trial)* | Deep IT/OT/IoT asset discovery without requiring credentials; shadow IT surfacing; automated hardware warranty lookup directly from OEMs; ISO 19770 and NIST audit reporting. |
+| **[Device42](https://www.device42.com/)** | **$230M Acquisition Valuation** *(Parent: Freshworks, NASDAQ: FRSH)* | **$1,449 / year** *(Core tier: up to 100 devices and 1,000 IP addresses)* | **14-day free trial** *(Up to 100 devices with full automated discovery and CMDB enabled)* | Continuous agentless CMDB discovery; automated dependency mapping (ADM); full Data Center Infrastructure Management (DCIM) with rack elevation drawings and thermal/power monitoring. |
+| **[Asset Panda](https://www.assetpanda.com/)** | **~$20M ARR** / ~$60M Valuation *(Private)* | **$3,000 / year** *(Starter tier: up to 1,000 assets & 5 user seats)* | **7-day full-feature free trial** *(Includes mobile app barcode scanner and custom fields)* | Mobile-first barcode/QR code auditing; digital custody handoffs with electronic signatures; maintenance work orders and repair tracking; flexible custom fields and audit templates. |
+| **[Hardcat](https://hardcat.com/)** | **~$12M Revenue** / ~$30M Valuation *(Private)* | **$5,000 / year** *(Base enterprise annual subscription)* | **14-day vendor-assisted pilot sandbox** *(Custom sample asset database configuration)* | Enterprise fixed asset management; Compliance Policy Framework for risk-based continuous validation; RFID and barcode physical tracking; sub-meter GPS asset positioning. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Explore the top open-source projects for self-hosted Hardware Asset Management, DCIM, and IT inventory tracking. Ranked in descending order by **GitHub Star Count**.
+
+| 📦 Repository & Project | ⭐ GitHub Stars | 💻 Primary Tech Stack | 🛡️ License | 📝 Overview & Core Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **[NetBox](https://github.com/netbox-community/netbox)** | [![Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers) | Python / Django / PostgreSQL | Apache-2.0 | The industry standard for network infrastructure modeling, DCIM, and hardware device tracking. Serves as an authoritative Source of Truth for physical racks, device bays, cables, power distribution, and inventory. |
+| **[Snipe-IT](https://github.com/grokability/snipe-it)** | [![Stars](https://img.shields.io/github/stars/grokability/snipe-it?style=social&color=white)](https://github.com/grokability/snipe-it/stargazers) | PHP / Laravel / MySQL | AGPL-3.0 | The most popular open-source IT asset management system. Tracks laptops, monitors, accessories, licenses, and consumables with complete check-in/check-out history, QR label printing, and automated user notification emails. |
+| **[InvenTree](https://github.com/inventree/InvenTree)** | [![Stars](https://img.shields.io/github/stars/inventree/InvenTree?style=social&color=white)](https://github.com/inventree/InvenTree/stargazers) | Python / Django / React | MIT | Highly extensible open-source inventory and hardware component tracking engine. Supports barcode scanning, supplier parts aggregation, stock locations, BOM management, and REST API automation. |
+| **[GLPI](https://github.com/glpi-project/glpi)** | [![Stars](https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white)](https://github.com/glpi-project/glpi/stargazers) | PHP / MariaDB | GPL-3.0 | Mature, enterprise-grade open-source ITIL service desk and IT asset management platform. Features native inventory agent support, financial tracking, contract renewals, network topology discovery, and SLA management. |
+| **[Shelf.nu](https://github.com/Shelf-nu/shelf.nu)** | [![Stars](https://img.shields.io/github/stars/Shelf-nu/shelf.nu?style=social&color=white)](https://github.com/Shelf-nu/shelf.nu/stargazers) | TypeScript / SvelteKit / Supabase | AGPL-3.0 | Modern, open-source asset management platform built for speed and simplicity. Features QR code-based custody handovers, team custody tracking, geolocation updates, and an elegant responsive web interface. |
+| **[Ralph](https://github.com/allegro/ralph)** | [![Stars](https://img.shields.io/github/stars/allegro/ralph?style=social&color=white)](https://github.com/allegro/ralph/stargazers) | Python / Django / PostgreSQL | Apache-2.0 | Proven Asset Management, DCIM, and CMDB system developed by Allegro. Optimized for large-scale data center operations, back-office workstation tracking, hardware purchase lifecycle flows, and rack elevations. |
+| **[Nautobot](https://github.com/nautobot/nautobot)** | [![Stars](https://img.shields.io/github/stars/nautobot/nautobot?style=social&color=white)](https://github.com/nautobot/nautobot/stargazers) | Python / Django | Apache-2.0 | Extensible Network Source of Truth and hardware inventory platform designed for infrastructure automation. Governs network hardware devices, lifecycle statuses, modules, and device interfaces. |
+| **[PartKeepr](https://github.com/partkeepr/PartKeepr)** | [![Stars](https://img.shields.io/github/stars/partkeepr/PartKeepr?style=social&color=white)](https://github.com/partkeepr/PartKeepr/stargazers) | PHP / Symfony | AGPL-3.0 | Open-source electronic component and hardware inventory manager. Tracks manufacturers, distributors, stock levels, part parameters, and physical storage bins with detailed parameter searching. |
+| **[ITFlow](https://github.com/itflow-org/itflow)** | [![Stars](https://img.shields.io/github/stars/itflow-org/itflow?style=social&color=white)](https://github.com/itflow-org/itflow/stargazers) | PHP / MySQL | GPL-3.0 | All-in-one open-source IT documentation, ticketing, and asset management solution built specifically for MSPs and internal IT departments. Integrates client asset tracking with ticketing and credential vaults. |
+| **[RackTables](https://github.com/RackTables/racktables)** | [![Stars](https://img.shields.io/github/stars/RackTables/racktables?style=social&color=white)](https://github.com/RackTables/racktables/stargazers) | PHP / MySQL | GPL-2.0 | Dedicated datacenter and server room management tool. Tracks physical server hardware, network addresses, rack space allocation, patch cables, and configuration files. |
+| **[GLPI Agent](https://github.com/glpi-project/glpi-agent)** | [![Stars](https://img.shields.io/github/stars/glpi-project/glpi-agent?style=social&color=white)](https://github.com/glpi-project/glpi-agent/stargazers) | Perl / C | GPL-3.0 | Multi-platform discovery and inventory agent for GLPI. Collects deep hardware specifications (CPU, RAM, BIOS, PCI peripherals, serial numbers) and pushes data directly to GLPI servers via REST API. |
+| **[OCS Inventory Server](https://github.com/OCSInventory-NG/OCSInventory-Server)** | [![Stars](https://img.shields.io/github/stars/OCSInventory-NG/OCSInventory-Server?style=social&color=white)](https://github.com/OCSInventory-NG/OCSInventory-Server/stargazers) | Perl / PHP / Apache | GPL-2.0 | High-performance open-source inventory server. Works with cross-platform endpoint agents to automatically report hardware architecture, network adapters, and connected peripherals over HTTP/HTTPS. |
+
+---
+
+## 🛠️ Core Capabilities Matrix
+
+| Feature Focus | 🏢 ServiceNow HAM | 🔍 Lansweeper | 🖥️ Device42 | 📦 Snipe-IT | 🌐 NetBox |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Automated Network Discovery** | ✅ | ✅ | ✅ | 🔌 *(via Agents/API)* | 🔌 *(via Integrations)* |
+| **Barcode & QR Tag Printing** | ✅ | ❌ | ✅ | ✅ | ✅ |
+| **DCIM Rack & Cable Mapping** | ✅ | ⚠️ *(Basic)* | ✅ | ❌ | ✅ |
+| **Audit & Physical Custody Handoffs**| ✅ | ✅ | ✅ | ✅ | ⚠️ *(Custom)* |
+| **Hardware Warranty Verification** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Self-Hosted Deployment** | ❌ *(SaaS only)* | ⚠️ *(Local Scanner)*| ⚠️ *(Virtual Appliance)* | ✅ *(100% On-Prem)* | ✅ *(100% On-Prem)* |
+| **Full Source Code Access** | ❌ | ❌ | ❌ | ✅ | ✅ |
+
+---
+
+## 🤝 How to Contribute
+
+We welcome additions, corrections, and updates from the community!
+
+1. 🍴 **Fork** this repository.
+2. 🌿 Create your feature branch (`git checkout -b feature/add-new-ham-tool`).
+3. 📝 Add your entry to `README.md` following the established table structure:
+   - Provide verified, non-generic pricing and exact free tier/trial limits.
+   - For open-source repos, include the social star badge with link to stargazers.
+4. 💾 Commit your changes (`git commit -m 'feat: Add [ToolName] to open-source HAM directory'`).
+5. 🚀 Push to the branch (`git push origin feature/add-new-ham-tool`).
+6. 📬 Submit a **Pull Request** detailing why the tool qualifies as a leading HAM solution.
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated Hardware Asset Management ecosystem resource helpful for your infrastructure planning, compliance audits, or engineering work:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your IT operations, DevOps, and SysAdmin communities.
+- ☕ **Support continuous maintenance**: Buy a coffee or sponsor development on the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+Your support helps keep this guide thoroughly researched, verified, and updated!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Hardware-Asset-Management-Ham&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Hardware-Asset-Management-Ham&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer & License
+
+- **Disclaimer**: This compilation is community-curated for informational purposes. Product logos, trademarks, and brand names belong to their respective registered owners. Pricing and limits are subject to change by vendors; always check official vendor sites for real-time contractual terms.
+- **License**: Released under the [MIT License](file:///C:/Users/hp/Documents/Projects/Awesome-Hardware-Asset-Management-Ham/LICENSE).
+- Explore more curated developer collections at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)**.
