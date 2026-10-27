@@ -81,9 +81,9 @@ The following commercial solutions represent the category leaders in enterprise 
 
 ## 🔓 Open-Source GitHub Projects
 
-Explore the top open-source projects for self-hosted Hardware Asset Management, DCIM, and IT inventory tracking. Ranked in descending order by **GitHub Star Count**.
+Explore the top open-source projects for self-hosted Hardware Asset Management, DCIM, and IT inventory tracking. Ranked in descending order by **GitHub Stars_Count**.
 
-| 📦 Repository & Project | ⭐ GitHub Stars | 💻 Primary Tech Stack | 🛡️ License | 📝 Overview & Core Strengths |
+| 📦 Repository & Project | ⭐ GitHub_Stars | 💻 Primary Tech Stack | 🛡️ License | 📝 Overview & Core Strengths |
 | :--- | :--- | :--- | :--- | :--- |
 | **[NetBox](https://github.com/netbox-community/netbox)** | [![Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers) | Python / Django / PostgreSQL | Apache-2.0 | The industry standard for network infrastructure modeling, DCIM, and hardware device tracking. Serves as an authoritative Source of Truth for physical racks, device bays, cables, power distribution, and inventory. |
 | **[Snipe-IT](https://github.com/grokability/snipe-it)** | [![Stars](https://img.shields.io/github/stars/grokability/snipe-it?style=social&color=white)](https://github.com/grokability/snipe-it/stargazers) | PHP / Laravel / MySQL | AGPL-3.0 | The most popular open-source IT asset management system. Tracks laptops, monitors, accessories, licenses, and consumables with complete check-in/check-out history, QR label printing, and automated user notification emails. |
@@ -122,7 +122,7 @@ We welcome additions, corrections, and updates from the community!
 2. 🌿 Create your feature branch (`git checkout -b feature/add-new-ham-tool`).
 3. 📝 Add your entry to `README.md` following the established table structure:
    - Provide verified, non-generic pricing and exact free tier/trial limits.
-   - For open-source repos, include the social star badge with link to stargazers.
+   - For open-source repos, include the social Stars_Badge with link to stargazers.
 4. 💾 Commit your changes (`git commit -m 'feat: Add [ToolName] to open-source HAM directory'`).
 5. 🚀 Push to the branch (`git push origin feature/add-new-ham-tool`).
 6. 📬 Submit a **Pull Request** detailing why the tool qualifies as a leading HAM solution.
